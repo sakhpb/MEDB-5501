@@ -1,0 +1,59 @@
+
+---
+data_dictionary: framingham.txt
+
+description: >
+  This dataset contains 1,406 observations from the Framingham Heart Study.
+  The data include participants whose cholesterol was measured during
+  the first examination. Variables include serum cholesterol, age, sex,
+  systolic blood pressure, diastolic blood pressure, and number of
+  cigarettes smoked per day. 
+copyright: >
+  The dataset is attributed to Statistical Methods in Epidemiology
+  by H.A. Kahn and C.T. Sempos. It can be accessed through The Data and Story Library.
+  It was last accessed by Sudhiksha Kumar on 11/22/2026.
+
+format:
+  tab-delimited
+
+varnames:
+  first row of data
+
+missing_value_code:
+  Blank fields are interpreted as missing values (NA).
+
+size:
+  rows: 1406
+  columns: 6
+
+vars:
+  Cholesterol:
+    label: Serum cholesterol level at first examination
+    scale: numeric
+    unit: not specified in the available dataset documentation
+
+  Age:
+    label: Age of participant at first examination
+    scale: positive integer
+    unit: years
+
+  Sex:
+    label: Sex of participant
+    value:
+      MALE
+      FEM
+
+  SBP:
+    label: Systolic blood pressure at first examination
+    scale: positive integer
+    unit: not specified in the available dataset documentation
+
+  DBP:
+    label: Diastolic blood pressure at first examination
+    scale: positive integer
+    unit: not specified in the available dataset documentation
+
+  CIG:
+    label: Number of cigarettes smoked per day at first examination
+    scale: non-negative integer
+    unit: cigarettes per day
